@@ -143,7 +143,7 @@ func RunSpecialInstruction(inst []string) {
 // into an easily human-readable format and returns the result as a string.
 func FormatCells(start, end int) string {
 	if start < 0 {
-		start = TapeLength + start - 1
+		start = TapeLength + start
 	}
 	if end >= TapeLength {
 		end = end - TapeLength
